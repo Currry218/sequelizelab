@@ -1,4 +1,4 @@
-import mysql2 from 'mysql2';
+
 const express = require('express');
 const app = express();
 const port = 4000 | process.env.PORT;
