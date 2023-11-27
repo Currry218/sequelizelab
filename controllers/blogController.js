@@ -45,7 +45,6 @@ controller.showList = async (req,res) => {
         res.locals.blogs = tags.Blogs;
     } 
     else{
-        console.log(cat, tag);
         res.locals.blogs = await models.Blog.findAll({
             attributes: ['id', 'title', 'imagePath', "summary", "createdAt"],
             include: [
